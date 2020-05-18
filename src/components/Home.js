@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import palette from "../lib/styles";
 import Responsive from "./common/Responsive";
+import SelectColors from "./SelectColors";
 
 const HomeBlock = styled(Responsive)`
   max-width: 1000px;
@@ -42,51 +43,6 @@ const StylesChart = styled.ul`
   }
 `;
 
-const Section = styled.section`
-  margin: 0 0 30px;
-  font-size: 24px;
-  text-transform: capitalize;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #495057;
-`;
-const ColorWrap = styled.div`
-  .colorChips {
-    text-align: center;
-
-    .colorChip {
-      position: relative;
-      min-height: 1px;
-      padding-right: 2px;
-      padding-left: 2px;
-      float: left;
-      width: 19%;
-      margin-bottom: 40px;
-      line-height: 1.25;
-
-      .colorChipBg {
-        height: 80px;
-        background: #e9ecef;
-      }
-      .colorName {
-        padding: 14px 3px 2px;
-        text-transform: uppercase;
-        text-align: left;
-        font-size: 14px;
-        font-weight: 500;
-      }
-      .colorHex {
-        width: 100%;
-        padding: 2px 3px;
-        text-align: left;
-        font-size: 14px;
-        color: #868e96;
-        line-height: 1.3;
-      }
-    }
-  }
-`;
-
 const Home = () => {
   return (
     <HomeBlock>
@@ -113,59 +69,7 @@ const Home = () => {
         </li>
       </StylesChart>
 
-      <Section>
-        <h3>Gray</h3>
-        <ColorWrap>
-          <div className="colorChips">
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-            <div className="colorChip">
-              <div className="colorChipBg" />
-              <div className="colorName">gray 0</div>
-              <div className="colorHex">#f8f9fa</div>
-            </div>
-          </div>
-        </ColorWrap>
-      </Section>
+      <SelectColors />
     </HomeBlock>
   );
 };
