@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 import palette from "../lib/styles";
 import Responsive from "./common/Responsive";
 import SelectColors from "./SelectColors";
+import ColorBox from "./ColorBox";
+import { Link } from "react-router-dom";
 
 const HomeBlock = styled(Responsive)`
   max-width: 1000px;
@@ -12,7 +14,6 @@ const Header = styled.div`
   font-weight: 600;
   color: #495057;
   line-height: 1.2;
-
   margin-top: 5rem;
   border-bottom: 1px solid #dee2e6;
 `;
@@ -24,12 +25,8 @@ const StylesChart = styled.ul`
     display: block;
     padding: 6px 0;
     width: 100%;
-    font-size: 12px;
-    font-weight: 400;
-    color: #868e96;
+
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: all 0.2s ease-out;
   }
 
   li span {
@@ -40,37 +37,60 @@ const StylesChart = styled.ul`
     height: 12px;
     border-radius: 3px;
     vertical-align: middle;
+    cursor: pointer;
+  }
+`;
+
+const SLink = styled(Link)`
+  color: #868e96;
+  text-decoration: "none";
+  transition: all 0.2s ease-out;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  font-weight: 400;
+  :hover {
+    color: ${(props) => props.color || "#868e96"};
   }
 `;
 
 const Home = () => {
   return (
-    <HomeBlock>
-      <Header>
-        <h1>
-          Open color is an
-          <br />
-          open-source color scheme
-        </h1>
-      </Header>
-      <StylesChart>
-        <li>
-          <span style={{ background: palette.gray[9] }}></span>gray
-        </li>
-        <li>
-          <span style={{ background: palette.red[9] }}></span>
-          red
-        </li>
-        <li>
-          <span style={{ background: palette.pink[9] }}></span>pink
-        </li>
-        <li>
-          <span style={{ background: palette.grape[9] }}></span>grape
-        </li>
-      </StylesChart>
-
-      <SelectColors />
-    </HomeBlock>
+    <>
+      <ColorBox />
+      <HomeBlock>
+        <Header>
+          <h1>
+            Open color is an
+            <br />
+            open-source color scheme
+          </h1>
+        </Header>
+        <StylesChart>
+          <li>
+            <SLink to="#gray" color={palette.gray[7]}>
+              <span style={{ background: palette.gray[7] }}></span>gray
+            </SLink>
+          </li>
+          <li>
+            <SLink to="#gray" color={palette.red[7]}>
+              <span style={{ background: palette.red[7] }}></span>
+              red
+            </SLink>
+          </li>
+          <li>
+            <SLink to="#gray" color={palette.pink[7]}>
+              <span style={{ background: palette.pink[7] }}></span>pink
+            </SLink>
+          </li>
+          <li>
+            <SLink to="#gray" color={palette.grape[7]}>
+              <span style={{ background: palette.grape[7] }}></span>grape
+            </SLink>
+          </li>
+        </StylesChart>
+        <SelectColors />
+      </HomeBlock>
+    </>
   );
 };
 
