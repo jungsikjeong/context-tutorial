@@ -3,14 +3,14 @@ import "./App.css";
 import ColorBox from "./components/ColorBox";
 import { ColorProvider } from "./contexts/color";
 import SelectColors from "./components/SelectColors";
+import Home from "./components/Home";
 
 function App() {
   return (
     <ColorProvider>
-      <div>
-        <SelectColors />
-        <ColorBox />
-      </div>
+      <Home />
+      {/* <SelectColors /> */}
+      {/* <ColorBox /> */}
     </ColorProvider>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
+import palette from "../lib/styles";
+import styled from "styled-components";
 import { ColorConsumer } from "../contexts/color";
-
-const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 const SelectColors = () => {
   return (
@@ -10,7 +10,7 @@ const SelectColors = () => {
       <ColorConsumer>
         {({ actions }) => (
           <div style={{ display: "flex" }}>
-            {colors.map((color) => (
+            {palette.gray.map((color) => (
               <div
                 key={color}
                 style={{
