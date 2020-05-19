@@ -54,88 +54,96 @@ const SelectColors = () => {
   return (
     <ColorConsumer>
       {({ actions }) => (
-        <Section>
-          <h3>gray</h3>
-          <ColorWrap>
-            <div className="colorChips">
-              {palette.gray.map((color, index) => (
-                <div className="colorChip" key={color}>
-                  <div
-                    className="colorChipBg"
-                    style={{ background: color }}
-                    onClick={() => actions.setColor(color)}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      actions.setSubColor(color);
-                    }}
-                  />
-                  <div className="colorName">gray{index}</div>
-                  <div className="colorHex">{color}</div>
-                </div>
-              ))}
-            </div>
-          </ColorWrap>
-          <h3>red</h3>
-          <ColorWrap>
-            <div className="colorChips">
-              {palette.red.map((color, index) => (
-                <div className="colorChip" key={color}>
-                  <div
-                    className="colorChipBg"
-                    style={{ background: color }}
-                    onClick={() => actions.setColor(color)}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      actions.setSubColor(color);
-                    }}
-                  />
-                  <div className="colorName">red{index}</div>
-                  <div className="colorHex">{color}</div>
-                </div>
-              ))}
-            </div>
-          </ColorWrap>
-          <h3>pink</h3>
-          <ColorWrap>
-            <div className="colorChips">
-              {palette.pink.map((color, index) => (
-                <div className="colorChip" key={color}>
-                  <div
-                    className="colorChipBg"
-                    style={{ background: color }}
-                    onClick={() => actions.setColor(color)}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      actions.setSubColor(color);
-                    }}
-                  />
-                  <div className="colorName">pink{index}</div>
-                  <div className="colorHex">{color}</div>
-                </div>
-              ))}
-            </div>
-          </ColorWrap>
-          <h3>grape</h3>
-          <ColorWrap>
-            <div className="colorChips">
-              {palette.grape.map((color, index) => (
-                <div className="colorChip" key={color}>
-                  <div
-                    className="colorChipBg"
-                    style={{ background: color }}
-                    onClick={() => actions.setColor(color)}
-                    onContextMenu={(e) => {
-                      e.preventDefault();
-                      actions.setSubColor(color);
-                    }}
-                  />
-                  <div className="colorName">grape{index}</div>
-                  <div className="colorHex">{color}</div>
-                </div>
-              ))}
-            </div>
-          </ColorWrap>
-        </Section>
+        <>
+          <Section id="gray">
+            <h3>gray</h3>
+            <ColorWrap>
+              <div className="colorChips">
+                {palette.gray.map((color, index) => (
+                  <div className="colorChip" key={color}>
+                    <div
+                      className="colorChipBg"
+                      style={{ background: color }}
+                      onClick={() => actions.setColor(color)}
+                      onContextMenu={(e) => {
+                        e.preventDefault();
+                        actions.setSubColor(color);
+                      }}
+                    />
+                    <div className="colorName">gray{index}</div>
+                    <div className="colorHex">{color}</div>
+                  </div>
+                ))}
+              </div>
+            </ColorWrap>
+          </Section>
+          <Section id="red">
+            <h3>red</h3>
+            <ColorWrap>
+              <div className="colorChips">
+                {palette.red.map((color, index) => (
+                  <div className="colorChip" key={color}>
+                    <div
+                      className="colorChipBg"
+                      style={{ background: color }}
+                      onClick={() => actions.setColor(color)}
+                      onContextMenu={(e) => {
+                        e.preventDefault();
+                        actions.setSubColor(color);
+                      }}
+                    />
+                    <div className="colorName">red{index}</div>
+                    <div className="colorHex">{color}</div>
+                  </div>
+                ))}
+              </div>
+            </ColorWrap>
+          </Section>
+          <Section id="pink">
+            <h3>pink</h3>
+            <ColorWrap>
+              <div className="colorChips">
+                {palette.pink.map((color, index) => (
+                  <div className="colorChip" key={color}>
+                    <div
+                      className="colorChipBg"
+                      style={{ background: color }}
+                      onClick={() => actions.setColor(color)}
+                      onContextMenu={(e) => {
+                        e.preventDefault();
+                        actions.setSubColor(color);
+                      }}
+                    />
+                    <div className="colorName">pink{index}</div>
+                    <div className="colorHex">{color}</div>
+                  </div>
+                ))}
+              </div>
+            </ColorWrap>
+          </Section>
+          <Section id="grape">
+            <h3>grape</h3>
+            <ColorWrap>
+              <div className="colorChips">
+                {palette.grape.map((color, index) => (
+                  <div className="colorChip" key={color}>
+                    <div
+                      className="colorChipBg"
+                      style={{ background: color }}
+                      onClick={() => actions.setColor(color)}
+                      onContextMenu={(e) => {
+                        e.preventDefault();
+                        actions.setSubColor(color);
+                      }}
+                    />
+                    <div className="colorName">grape{index}</div>
+                    <div className="colorHex">{color}</div>
+                  </div>
+                ))}
+              </div>
+            </ColorWrap>
+          </Section>
+        </>
       )}
     </ColorConsumer>
   );

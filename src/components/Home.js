@@ -25,7 +25,6 @@ const StylesChart = styled.ul`
     display: block;
     padding: 6px 0;
     width: 100%;
-
     text-transform: uppercase;
   }
 
@@ -41,13 +40,14 @@ const StylesChart = styled.ul`
   }
 `;
 
-const SLink = styled(Link)`
+const A = styled.a`
   color: #868e96;
   text-decoration: "none";
   transition: all 0.2s ease-out;
   letter-spacing: 0.05em;
   font-size: 12px;
   font-weight: 400;
+
   :hover {
     color: ${(props) => props.color || "#868e96"};
   }
@@ -67,25 +67,25 @@ const Home = () => {
         </Header>
         <StylesChart>
           <li>
-            <SLink to="#gray" color={palette.gray[7]}>
+            <A href="#gray" color={palette.gray[7]}>
               <span style={{ background: palette.gray[7] }}></span>gray
-            </SLink>
+            </A>
           </li>
           <li>
-            <SLink to="#gray" color={palette.red[7]}>
+            <A href="#red" color={palette.red[7]}>
               <span style={{ background: palette.red[7] }}></span>
               red
-            </SLink>
+            </A>
           </li>
           <li>
-            <SLink to="#gray" color={palette.pink[7]}>
+            <A href="#pink" color={palette.pink[7]}>
               <span style={{ background: palette.pink[7] }}></span>pink
-            </SLink>
+            </A>
           </li>
           <li>
-            <SLink to="#gray" color={palette.grape[7]}>
+            <A href="#grape" color={palette.grape[7]}>
               <span style={{ background: palette.grape[7] }}></span>grape
-            </SLink>
+            </A>
           </li>
         </StylesChart>
         <SelectColors />
