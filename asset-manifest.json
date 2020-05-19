@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jungsikjeong/context-tutorial/static/css/main.01b4186f.chunk.css",
+    "main.js": "/jungsikjeong/context-tutorial/static/js/main.e6196ade.chunk.js",
+    "main.js.map": "/jungsikjeong/context-tutorial/static/js/main.e6196ade.chunk.js.map",
+    "runtime-main.js": "/jungsikjeong/context-tutorial/static/js/runtime-main.512097e5.js",
+    "runtime-main.js.map": "/jungsikjeong/context-tutorial/static/js/runtime-main.512097e5.js.map",
+    "static/js/2.5a121151.chunk.js": "/jungsikjeong/context-tutorial/static/js/2.5a121151.chunk.js",
+    "static/js/2.5a121151.chunk.js.map": "/jungsikjeong/context-tutorial/static/js/2.5a121151.chunk.js.map",
+    "index.html": "/jungsikjeong/context-tutorial/index.html",
+    "precache-manifest.4f006a37008f973913a139f67dcf2ad8.js": "/jungsikjeong/context-tutorial/precache-manifest.4f006a37008f973913a139f67dcf2ad8.js",
+    "service-worker.js": "/jungsikjeong/context-tutorial/service-worker.js",
+    "static/css/main.01b4186f.chunk.css.map": "/jungsikjeong/context-tutorial/static/css/main.01b4186f.chunk.css.map",
+    "static/js/2.5a121151.chunk.js.LICENSE.txt": "/jungsikjeong/context-tutorial/static/js/2.5a121151.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.512097e5.js",
+    "static/js/2.5a121151.chunk.js",
+    "static/css/main.01b4186f.chunk.css",
+    "static/js/main.e6196ade.chunk.js"
+  ]
+}
