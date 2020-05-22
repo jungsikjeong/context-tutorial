@@ -1,5 +1,6 @@
 # Context API Project
-
+ > 디자인 참고 https://yeun.github.io/open-color/
+ 
 - 리액트 Context API 사용법을 익힐겸 만든 프로젝트입니다.
 - [결과물](https://jungsikjeong.github.io/context-tutorial/)
 
